@@ -1,0 +1,43 @@
+# This is a practice makefile
+
+FLAG = -f
+
+all : myfile1 myfile2 concat
+
+
+myfile1 : 
+	touch $@
+
+myfile2 : 
+	touch $@
+
+concat : 
+	cat myfile1 myfile2 > otherfile
+
+clean : 
+	rm $(FLAG) myfile1
+	rm $(FLAG)myfile2
+	rm $(FLAG) otherfile
+
+# Following are different options to compile 
+
+compile_all : 
+	g++ -Wall -g wherewhen.c countdown.c main.c -lm -o myprogram
+
+just_compile_seperately : 
+	g++ -Wall -g wherewhen.c
+	g++ -Wall -g countdown.c
+	g++ -Wall -g main.c
+	g++ -g wherewhen.o countdown.o main.o -lm -o myprogram
+
+wherewhen.o : wherewhen.c wherewhen.h
+	g++ -Wall -g -c wherewhen.c
+
+countdown.o : countdown.c countdown.h
+	g++ -Wall -g -c countdown.c
+
+main.o : main.c wherewhen.h countdown.h
+	g++ -Wall -g -c main.c
+
+myprogram : main.o countdown.o wherewhen.o
+	g++ -g wherewhen.o countdown.o main.o -lm -o myprogram

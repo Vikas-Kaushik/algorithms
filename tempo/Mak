@@ -1,0 +1,3 @@
+my.o: my.cpp my_interface.h
+my_interface.o: my_interface.cpp my_interface.h
+using_hello.o: using_hello.cpp /home/dennis/algo/hello.h

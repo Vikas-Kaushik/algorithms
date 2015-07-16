@@ -1,0 +1,39 @@
+#include <iostream>
+#include <map>
+#include <list>
+#include <string>
+
+using namespace std;
+
+int main() {
+  int count;
+  map<int, list<string>> stduents;
+  typedef map<int, list<string> >::const_iterator students_it;
+  typedef map<int, list<string> >::const_reverse_iterator rstudents_it;
+  typedef list<string>::const_iterator names_it;
+
+  cin >> count;
+
+  whle(count--) {
+    string name;
+    int marks;
+    cin >> name >> marks;
+    student_it existing = students.find(marks);
+    if(existing != students.end()) {
+      list<string> l;
+      l = existing->second; l.push_back(name); l.sort();
+      students[marks] = l;
+    }
+    else {
+      list<string> l;
+      students[marks] = l;
+    }
+  }
+  //Displaying
+  for(rstudent_it i = students.rbegin(); i != students.rend(); ++i) {
+    for(name_it j = (i->second).begin(); j != (i->second).end(); ++j) {
+      cout << *j << " " << i->first << endl;
+    }
+  }
+  return 0;
+}

@@ -1,0 +1,31 @@
+#include<iostream>
+
+using namespace std;
+
+bool IsPalindrome(string str);
+
+int main(){
+
+  return 0;
+}
+
+bool IsPalindrome(string str){
+  int l = str.length();
+
+  cout << endl;
+
+  if(l <= 0)
+    cout << "Invalid string length." << endl;
+
+  else if(l == 1)
+    return true;
+
+  else {
+    int i,j;
+    for(i = 0, j = l-1; i < j; j = (l - i)){
+      if( str[i] != str[j] )
+	return false;
+    }
+    return true;
+  }
+}

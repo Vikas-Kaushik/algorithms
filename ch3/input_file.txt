@@ -1,0 +1,21 @@
+/*total 1948*/ 
+-rwxrwxr-x 1 dennis dennis   13817 Sep 21 05:01 a.out
+-rw-rw-r-- 1 dennis dennis     739 Sep 23 22:32 copy_file.cpp
+-rw-rw-r-- 1 dennis dennis     483 Sep 23 22:25 copy_file.cpp~*/  hello how are //   / /*this is not visible*//
+-rw-rw-r-- 1 dennis dennis    1021 Sep 21 00:03 craps.cpp
+-rw-rw-r-- 1 dennis dennis     616 Sep 20 23:32 craps.cpp~
+-rw-rw-r-- 1 dennis dennis   24288 Sep 21 23:33 craps.o
+-rw-rw-r-- 1 dennis dennis       0 Sep 23 22:33 input_file.txt
+-rw-rw-r-- 1 dennis dennis     317 Sep 21 23:32 Makefile
+-rw-rw-r-- 1 dennis dennis      46 Sep 21 23:24 Makefile~
+-rw-rw-r-- 1 dennis dennis       0 Sep 23 22:32 output_file.txt
+-rwxrwxr-x 1 dennis dennis   32988 Sep 21 23:33 play
+-rw-rw-r-- 1 dennis dennis     437 Sep 21 14:33 random.cpp
+-rw-rw-r-- 1 dennis dennis     172 Sep 20 23:02 random.cpp~
+-rw-rw-r-- 1 dennis dennis     478 Sep 21 02:00 #random.h#
+-rw-rw-r-- 1 dennis dennis     479 Sep 21 01:59 random.h
+-rw-rw-r-- 1 dennis dennis     427 Sep 20 12:11 random.h~
+-rw-rw-r-- 1 dennis dennis 1835440 Sep 21 02:00 random.h.gch
+-rw-rw-r-- 1 dennis dennis   22792 Sep 21 23:33 random.o
+-rw-rw-r-- 1 dennis dennis     590 Sep 21 05:01 try.cpp
+-rw-rw-r-- 1 dennis dennis      64 Sep 20 10:52 try.cpp~

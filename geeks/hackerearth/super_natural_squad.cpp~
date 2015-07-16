@@ -1,0 +1,31 @@
+/*
+ * July Easy
+ */
+
+#include <iostream>
+
+int main() {
+  int testCount;
+  cin >> testCount;
+  if(testCount < 1 || testCount > 30) {
+    return 0;
+  }
+  while(testCount-- != 0) {
+    int n,k;
+    cin >> n >> k;
+    if(n < 0 || k < 0 || n > 200 || k > 200) {
+      return 0;
+    }
+
+    if(n < k) {
+      cout << 0;
+    }
+    else if (n == k) {
+      cout << 1;
+    }
+    else {
+
+    }
+  }
+  return 0;
+}

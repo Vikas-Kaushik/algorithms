@@ -1,0 +1,15 @@
+// chapter 2, exercise 6 and 7
+// Printing frequency of data in grapho form
+
+#include <iostream>
+
+using namespace std;
+
+// functions to make horizontal and vertical graphs, data frequency is passed.
+// graph interval is like 0-9 10-19 20-29 upto 100
+void horGraph(int *freq);
+void verGraph(int *freq);
+int main(){
+
+  return 0;
+}

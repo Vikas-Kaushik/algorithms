@@ -1,0 +1,5 @@
+
+Standard rule for makefile :-
+Target : Dependencies 
+Makefile can contain 5 types of matter i.e.
+1. Implicit Rules : 

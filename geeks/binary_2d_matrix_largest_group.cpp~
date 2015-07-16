@@ -1,0 +1,18 @@
+/* 
+ * Detecting largest group of 1's in a 2d binary matrix.
+ * Problem 5 of Kurumanchi
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+  int arr[][] = { {1,1,0,0,0},
+		  {0,1,1,0,0},
+		  {0,0,1,0,1},
+		  {1,0,0,0,1},
+		  {0,1,0,1,1}, };
+
+  return 0;
+}

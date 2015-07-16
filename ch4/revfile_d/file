@@ -1,0 +1,7 @@
+total 72
+drwxrwxr-x 2 dennis dennis  4096 Sep 30 08:39 .
+drwxrwxr-x 6 dennis dennis  4096 Sep 30 07:37 ..
+-rwxrwxr-x 1 dennis dennis 54471 Sep 30 08:38 a.out
+-rw-rw-r-- 1 dennis dennis     0 Sep 30 08:39 file
+-rw-rw-r-- 1 dennis dennis  1062 Sep 30 08:38 revfile.cpp
+-rw-rw-r-- 1 dennis dennis   353 Sep 30 07:50 revfile.cpp~

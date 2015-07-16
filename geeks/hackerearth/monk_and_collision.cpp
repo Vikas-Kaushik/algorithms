@@ -1,0 +1,38 @@
+/*
+ * code monk hashing challenge
+ */
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  size_t testCount;
+  cin >> testCount;
+   	
+  if(testCount < 1 || testCount > 10)	return 0;
+   		
+  while(testCount--)	{
+    size_t collisions = 0;
+    size_t n;
+    cin >> n;
+    if(n < 1 || n > 100) return 0;
+   		
+    bool *hash = new bool[10];
+   		   		
+    while(n--) {
+      size_t x;
+      cin >> x;
+      if(x < 0 || x > 100000) return 0;
+   			
+      int fx = x%10;
+      if(hash[fx]) {
+	++collisions;
+      }
+      else {
+	hash[fx] = true;
+      }
+    }
+    cout << collisions << endl;
+  }
+}

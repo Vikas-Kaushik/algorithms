@@ -1,0 +1,11 @@
+
+#use1 options: 
+case 1: addNode(&head, value, index);
+case 2: deleteNode(&head, value);
+case 3: displayList(head);
+case 4: deleteList(&head);
+case 5: countNodes(head);
+case 6: append(&head, data);
+case 7: push(&head, data);
+case 8: getNode(head, index);
+default: exit;

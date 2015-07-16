@@ -1,0 +1,15 @@
+#include<iostream>
+
+int main(){
+
+  int i = 4;
+
+  if( i != '*')
+    cout << endl << "compared done";
+  else 
+    cout << endl << "comparision failed";
+
+  cout << endl;
+
+  return o;
+}

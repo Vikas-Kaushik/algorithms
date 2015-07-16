@@ -1,0 +1,44 @@
+/**
+ * To try some experiments with array of string.
+ * How to access a particular char in string at a 
+ * particular index of array.
+ */
+#include <iostream>
+
+using namespace std;
+
+string keypads[10];
+
+void InitializeKeypad(string &keypads);
+
+int main(){
+  string keys;
+  string printChars = "";
+  InitializeKeypad(keypads);
+  cout << endl << "Enter phone keys (number) : ";
+  cin >> keys;
+  return 0;
+}
+
+/**
+ * Function: void InitializeKeypad(string &keypads)
+ * Usage: 
+ * -----------------------------------------
+ * This function initializes the keypad grid.
+ * an array of string instead of a grid.
+ */
+void InitializeKeypad(string &keypads){
+  keypad[0] = "";
+  keypad[1] = "";
+  keypad[2] = "abc";
+  keypad[3] = "def";
+  keypad[4] = "ghi";
+  keypad[5] = "jkl";
+  keypad[6] = "mno";
+  keypad[7] = "pqrs";
+  keypad[8] = "tuv";
+  keypad[9] = "wxyz";
+  for(int i = 0; i < 9; ++i){
+    keypad[i] = keypad[i].c_str();
+  }
+}

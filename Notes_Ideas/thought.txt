@@ -1,0 +1,5 @@
+I'm just studying from a long time for preparation of interviews. Have studies algorithms. Just doing everything on the notebook. With this way of doing stuff I sometimes feel less confident of the solution. Because it's a code and I just can't execute it in my brains and even if I could for some simple ones, I'm not conifdent of it whether it will match the compiler output as well. 
+
+Just studying leads you to this situation. If you wirte code to PC and execute it as well, it'll seem boring somethimes. The challenge in long term preparation is not the problem or syllabus. It's boredom, that you have to fight with. Somehow you have to maintain your interest in the subject. 
+
+Code : wirte it on paper first, execute yourself or anticipate it's output. Then write it in computer and let the compiler do it's job. Answer matches, then proceed with next problem, or optimization of the current one. If not, you gotta get deep in the code and get to learn how compiler understands what you wrote.

@@ -1,0 +1,21 @@
+/*
+ * This program represents adjecency list representation of a graph
+ */
+
+using namespace std;
+
+struct AdjNode {
+  int vertex;
+  AdjNode *next;
+};
+
+struct Graph {
+  AdjNode *head;
+  int vertices;
+};
+
+int main() {
+
+
+  return 0;
+}

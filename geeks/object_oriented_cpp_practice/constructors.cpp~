@@ -1,0 +1,49 @@
+/*
+ * This is just to practice different constructor types and other object oriented freatures.
+ */
+#include <iostream>
+using namespace std;
+
+class Base {
+private:
+  int a;
+  string str;
+
+public:
+  Base() {
+    a = 10;
+    str = "dennis";
+  }
+  int getA() {
+    return this->a;
+  }
+  void printValues() {
+    cout << endl << "a : " << this->a << " str: " << this->str << endl;
+  }
+};
+
+#include<iostream>
+using namespace std;
+ 
+class Point
+{
+private:
+  int x, y;
+public:
+  /***Constructor****/
+  Point(int x1, int y1) { x = x1; y = y1; }
+ 
+  int getX()            {  return x; }
+  int getY()            {  return y; }
+};
+ 
+int main()
+{
+  Point p1(10, 15); // constructor is called here
+  Base bo();
+
+  // Let us access values assigned by constructor
+  cout << "p1.x = " << p1.getX() << ", p1.y = " << p1.getY();
+ 
+  return 0;
+}

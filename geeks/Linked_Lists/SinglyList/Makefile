@@ -1,0 +1,33 @@
+c=g++ -Wall -Werror -g
+
+use1: singlyList.cpp singlyList.h use1.cpp
+	$(c) -c singlyList.cpp
+	$(c) -c use1.cpp
+	$(c) singlyList.o use1.o -lm -o use1
+
+use2: singlyList.cpp singlyList.h use2.cpp
+	$(c) -c singlyList.cpp
+	$(c) -c use2.cpp
+	$(c) singlyList.o use2.o -lm -o use2
+
+clean : 
+	$(RM) *.o
+	$(RM) *~
+
+# C=g++
+# CFLAGS=-c -Wall
+# LDFLAGS=
+# SOURCES=singlyList.cpp use1_singlyList.cpp
+# OBJECTS=$(SOURCES:.cpp=.o)
+# EXECUTABLE=use1
+
+# all: $(SOURCES) $(EXECUTABLE)
+
+# $(EXECUTABLE): $(OBJECTS) 
+# 	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
+
+# .cpp.o:
+# 	$(CC) $(CFLAGS) $< -o $@
+
+#I think this is the shortest possible makefile of its kind
+#this is a comment section.

@@ -1,0 +1,12 @@
+A web application to make music using keyboard. It'll feel like I am playing piano or guitar using my keyboard.
+Easy to remember words e.g. typing Hello world at different speeds producing different music. You can select instrument type 
+like guitar or drum or flute. Total 26 alphabets and 10 neumeric digits are there. See how many tones you can produce.
+
+It'll be completely a different experience. when you'll get used to it, may be just by listening music you can tell what 
+is being typed. Blinds can listen. Also it'll be fun for peopole who type a lot, because they'll be listening music while
+typing, sometimes they will increase there speed, sometimes decrease it, just to enjoy there typing.
+
+Most used keywords may have low and sweet voice while others may be boom sounds. 
+
+Like you select different fonts for different styles. You can select different music fonts, so that you can select a font
+depending upon your mood.

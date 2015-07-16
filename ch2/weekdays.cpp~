@@ -1,0 +1,19 @@
+// Chapter 2, Exercise 1
+// enum to store weekdays
+
+#include <iostream>
+
+using namespace std;
+
+enum weekdayT{sunday, monday, tuesday, wednesday, thursday, friday, saturday};
+
+int main(){
+  weekdayT day;
+  cout << "Enter day # : ";
+  cin >> day;
+  day (weekdayT)%= 7; // cyclic 
+  cout << "YOur day is : " << day;
+
+  cout << endl;
+  return 0;
+}

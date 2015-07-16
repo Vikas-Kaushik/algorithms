@@ -1,0 +1,16 @@
+#inlcude<iostream>
+
+using namespace std;
+
+
+int main(){
+  while(true){
+    cout << "Your Pick : ";
+    cin >> pick;
+    cout << "Coins = " << coins-=pick;
+    pick = ComputerPick(coins);
+    cout << endl << "My Pick  : " << pick << endl;
+    cout << "Coins = " << coins-=pick << endl;
+  }
+  return 0;
+}

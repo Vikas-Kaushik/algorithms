@@ -1,0 +1,11 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+  int testCount = 0;
+  int chefCount = 0;
+
+  int voteCountList[];
+
+}

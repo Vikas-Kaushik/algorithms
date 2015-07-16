@@ -1,0 +1,41 @@
+/*
+ * Hackerearth - bookmyshow - marut and girls problem
+ */
+#include <iostream>
+using namespace std;
+
+int main() {
+  int n,m,q; // n:#girls, m:#qualities, q:quality_identifier
+
+  cin >> m;
+  // if number of qualities is invalid
+  if(m < 0 || m > 100) return 0;
+
+  for(int i = 0; i < m; ++i) {
+    cin >> q;
+    // if quality identifier is invalid
+    if(q < 1 || q > 10000) return 0;
+    qualities[i] = q;
+  }
+
+  cin >> n;
+  // if number of girls is invalid
+  if(n < 0 || n > 9000) return 0;
+
+  int count = 0;
+  bool eligible;
+  for(int i = 0; i < n; ++i) {
+    eligible = true;
+    for(int j = 0; (eligible && j < 100); ++j) {
+      cin >> q;
+      if(!search q in qualities) {
+	eligible = false;
+      }
+    }
+    // if girl is eligible increment count;
+    if(eligible) ++count;
+  }
+
+  cout << count;
+  return 0;
+}

@@ -1,0 +1,13 @@
+#include <iostream>
+#inlcude <map>
+
+using namespace std;
+
+int main() {
+  int testCount;
+  cin >> testCount;
+  while(testCount-- != 0) {
+
+  }
+  return 0;
+}

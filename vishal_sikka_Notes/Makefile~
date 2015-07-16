@@ -1,0 +1,6 @@
+CC = g++
+FLAG = -g -Wall
+SOURCES = my_header.cpp use_my_header.cpp use_my_header.h
+OBJECTS = use_my_header.o my_header.o
+EXECUTABLE = runnable
+

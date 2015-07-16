@@ -1,0 +1,12 @@
+Bookmark Tracker:-
+Generally we have a plenty of bookmarks in our browser.
+Now suppose the situation when I am interested in programming. Your case might be different. As the time passed I have found so many online tutorials, important blogs, websites etc. which I found very important for future use or some exams etc. whatever be the case. Suppose I bookmarked 100 pages to be viewed later e.g. interesting reads. Now I have time and I am looking for something interesting and knowledgable on internet. Now when I type the keyword - "read" or "programming" or "interesting" , my browser will show a lot of pages in the dropdown list. How shall I found which one to open ? Which one I shall find most worthy of my free time ? 
+
+Only way to this is to open the page and have a look. Right !!!  and later on I'll found something even more interesting and say "Shit !! I would have read this !!".
+
+So to avoid this I'll make a browser plugin or application which will show all the bookmarks in excel like format with column/field titles like 1. Sr.NO., 2. Keywords, 3. Description, 4. Usage etc. This wholistic view of all my bookmarks will also help me to compare all of them at once.
+A field also can be used for rating a page, so that I shall not open it again mistakenly. Another field that can have the number of times the page have visited. Another field containing the matter on the page in terms of it's size and time it'll take to study it.
+
+Time Calculator for a particular page :-
+This application shall calculate the amount of time a particular page would approximately take if you want to read it whole. Suppose I have 15 minutes spare, and now I want to read something on internet interesting as well as worthy of my time. I'll open my bookmark manager application as above and would look at the field where time is mentioned. I'll select a web page that I can read in 15 minutes. 
+This time can be calculated on the basis of amount of content(words) the page contains and my reading speed statatics.

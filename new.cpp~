@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<iostream>
+#include<iomanip>
+
+using namespace std;
+
+int main(){
+  cout<<"hello kya haal";
+  printf("Hello owrld \n");
+
+  struct tempT{
+    int balue;
+  };
+
+  tempT tp;
+
+  tp.balue = 93;
+
+  cout << endl << tp.balue << endl;
+  int arr[4];
+
+  const int a = 0;
+  const int b = 1;
+
+  switch(-1){
+  case a: 
+    cout << endl << "it's a";
+    break;
+  case b:
+    cout << endl << "it's b";
+    break;
+  default:
+    cout << endl << "default";
+    break;
+  }
+
+  cout << endl;
+  return 0;
+}

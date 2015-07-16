@@ -1,0 +1,35 @@
+#include<iostream>
+#include"random.h"
+
+int ThrowDice();
+bool TryToMakePoints(int points);
+
+int main(){
+  int point = ThrowDice();
+
+  cout << endl;
+  switch(point){
+  case 7: case 11:
+    cout << "You won with a natural !!";
+    break;
+  case 2: case 3: case 11:
+    cout << "That's craps.. You loose !!";
+    break;
+  default:
+    cout << Your total points are : << point;
+  if(TryToMakePoints(point))
+    cout << endl << "You made your points. You win";
+  else
+    cout << endl << "You didn't make your points. You loose";
+  break;
+    }
+  cout << endl;
+}
+
+int ThrowDice(){
+
+}
+
+bool TryToMakePoints(int points){
+
+}

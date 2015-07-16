@@ -1,0 +1,43 @@
+#inlcude<iostream>
+
+using namespace std;
+
+int ComputerPick(int coins);
+int Nim(int coins, int pick);
+
+int main(){
+  int pick = 0;
+  int coins = 13;
+
+  while(true){
+    cout << "Your Pick : ";
+    cin >> pick;
+    cout << "Coins = " << coins-=pick;
+    pick = ComputerPick(coins);
+    cout << endl << "My Pick  : " << pick << endl;
+    cout << "Coins = " << coins-=pick << endl;
+  }
+  return 0;
+}
+
+int ComputerPick(int coins){
+  // Now trying three possible picks i.e. 1, 2 and 3.
+  int pick1 = Nim(coins, 1);
+  int pick2 = Nim(coins, 2);
+  int pick3 = Nim(coins, 3);
+
+  switch(-1){  int pick1 = Nim(coins, 1);
+}
+
+int Nim(int coins, int pick){
+  coins -= pick;
+  if(coins == 1)
+    return pick;
+  else if(coins < 1)
+    return -1;
+  else{
+    for(int i = 1; i <= 3; ++i){
+      return Nim(coins, i);
+    }
+  }
+}

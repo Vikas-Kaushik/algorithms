@@ -1,0 +1,31 @@
+/* problem 33 karumanchi 
+print bt from preorder when leaf and internal nodes are known and there will be eihter 0 or 2 children
+*/
+
+#include <iostream>
+
+using namespace std;
+
+void fnPointer(int max, int *i);
+void fnReference(int max, int &i);
+
+
+int main(void) {
+  int i = 0;
+
+  int *ptr = &i;
+  fnPointer(10, ptr);
+
+  i = 0;
+  fnReference(10, i);
+
+  return 0;
+}
+
+void fnPointer(int max, int *i) {
+
+}
+
+void fnReference(int max, int &i) {
+
+}

@@ -1,0 +1,50 @@
+/**
+ * File: ListStringPermutation.cpp
+ * --------------------
+ * This program prints all the permutations 
+ * of a given string.
+ */
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+/* Private Function Prototype */
+
+void ListPermutations(string str);
+void RecursivePermute(string prefix, string rest);
+void NewListPermutations(string str, int c);
+
+/* Main Function */
+int main(){
+  string str;
+  cout << endl << "Please enter string : ";
+  cin >> str;
+
+  return 0;
+}
+
+/**
+ * Function: FunctionName
+ * Usage: int p = FunctionName(parameters);
+ * -----------------------------------------
+ * This function is used for this and that 
+ */
+void ListPermutations(string str);
+/**
+ * Function: FunctionName
+ * Usage: int p = FunctionName(parameters);
+ * -----------------------------------------
+ * This function is used for this and that 
+ */
+
+void RecursivePermute(string prefix, string rest);
+/**
+ * Function: FunctionName
+ * Usage: int p = FunctionName(parameters);
+ * -----------------------------------------
+ * This function is used for this and that 
+ */
+
+void NewListPermutations(string str, int c);

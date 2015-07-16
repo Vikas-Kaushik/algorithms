@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+bool isDigits(const std::string &str);
+
+int main() {
+  int testCount;
+  cin >> testCount;
+  // for invalid test count.
+  if(testCount < 1 || testCount > 10) {
+    //    cout << "invalid test count" << endl;
+    return 0;
+  }
+  while(testCount-- != 0) {
+    string str;
+    cin >> str;
+    // if string length is out of bound and string contains non-numeric value
+    size_t len = str.length();
+    if(len < 1 || len > 100000 || !isDigits(str)) {
+      //      cout << "invalid input" << endl;
+      return 0;
+    }
+  }
+
+  return 0;
+}
+
+bool isDigits(const std::string &str) {
+  return str.find_first_not_of("0123456789") == std::string::npos;
+}

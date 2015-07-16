@@ -1,0 +1,2 @@
+
+num days {MON, TUE, WED=6, THU, FRI=-1, SAT};

@@ -1,0 +1,32 @@
+/*
+ * code monk hashing challenge
+ */
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main() {
+  size_t testCount;
+  cin >> testCount;
+   	
+  if(testCount < 1 || testCount > 100)	return 0;
+   		
+  while(testCount--)	{
+    size_t count = 0;
+    size_t n;
+    cin >> n;
+    if(n < 1 || n > 100000) return 0;
+
+    while(n--) {
+      size_t input;
+      setCount = 0;
+      while(input) {
+	setCount += input & 1;
+	input >>= 1;
+      }
+
+    }
+  }
+  return 0;
+}

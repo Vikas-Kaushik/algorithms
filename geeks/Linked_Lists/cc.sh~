@@ -1,0 +1,9 @@
+!/bash/bin
+
+rm -rf *.o
+
+g++ -c singlyList.cpp
+g++ -c use1_singlyList.cpp
+
+
+g++ singlyList.o use1_singlyList.o -lm

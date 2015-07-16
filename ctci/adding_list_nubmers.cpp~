@@ -1,0 +1,6 @@
+/* To add two numbers represented by linked list.
+   Problem 2.5 in ctci. */
+
+void addNumbers(Node* n1, Node* n2, Node** n3_ref, int & carry){
+
+}

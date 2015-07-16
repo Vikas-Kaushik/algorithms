@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cstdlib>
+
+using namespace std;
+
+#define START_MONEY = 50;
+
+enum wheelT{
+  CHERRY, LEMON, ORANGE, PLUM, BELL, BAR
+};
+
+struct windowT{
+  wheelT wheel1; 
+  wheelT wheel2; 
+  wheelT wheel3; 
+  double balance;
+};
+
+

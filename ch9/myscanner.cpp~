@@ -1,0 +1,36 @@
+#include <iostream>
+#include "myscanner.h"
+
+MyScanner::MyScanner(){
+  len = 0;
+  cp = 0;
+  buffer = "";
+  spaceOption = PreserveSpaces;
+  //  this.setSpaceOption(PreserveSpaces);
+}
+
+MyScanner::~MyScanner(){
+  /* Empty */
+}
+
+void MyScanner::setInput(String str){
+  buffer = str;
+  len = str.length();
+  cp = 0;
+}
+
+bool MyScanner::hasMoreToken(){
+
+}
+
+string MyScanner::nextToken(){
+
+}
+
+void MyScanner::setSpaceOption(spaceOptionT option){
+  spaceOption = option;
+}
+
+spaceOptionT MyScanner::getSpaceOption(){
+  return spaceOption;
+}

@@ -1,0 +1,25 @@
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+
+int CopyF(string &infile, string &outfile);
+
+int main(){
+  ifstream infile;
+  ofstream outfile;
+
+  infile.open("/home/dennis/algo/ch3/input_file.txt");
+  if(infile.fail())
+    cout << endl << "input file opeing failed" << endl;
+
+  outfile.open("/home/dennis/algo/ch3/input_file.txt");
+  if(outfile.fail())
+    cout << endl << "out file opeing failed" << endl;
+
+  return 0;
+}
+
+int CopyF(string &infile, string &outfile){
+
+}

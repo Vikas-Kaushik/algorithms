@@ -1,0 +1,57 @@
+8/*
+ * Finding length of longest increasing subsequence out of an unordered array :-
+ * http://www.geeksforgeeks.org/dynamic-programming-set-3-longest-increasing-subsequence/
+ * https://github.com/mission-peace/interview/blob/master/src/com/interview/dynamic/LongestIncreasingSubsequence.java
+ */
+#include <iostream>
+using namespace std;
+
+int lisLength(int arr[], int n);
+int _lisLength(int arr[], int n);
+
+int main(){
+  int arr[] = {3,4,-1,0,6,2,3};
+  int n = sizeof(arr) / sizeof(arr[0]);
+  cout << endl << "length: " << n << endl;
+  cout << endl << "LIS is : " << lisLength(arr, n-1) << endl;
+
+  int arr1[] = {10,22,9,33,21,50,41,60,80};
+  int n1 = sizeof(arr1) / sizeof(arr1[0]);
+  cout << endl << "length: " << n1 << endl;
+  cout << endl << "LIS is : " << lisLength(arr1, n1-1) << endl;
+
+  return 0;
+}
+
+int lisLength(int arr[], int i){
+  int max = 0;
+  if(i > 0){
+    for(int j = 1; j <= i; ++j){
+      int len = 0;
+      //cout << j << endl;
+      if(arr[j] < arr[i]){
+	len = _lisLength(arr, j);
+	//cout << "*Length till element " << arr[i] << " is " << len << endl;
+      }
+      max = (max < len) ? len : max;
+    }
+  }
+  //cout << "returning element " << arr[n-1] << " with length " << max+1 << endl;
+  return max+1;
+}
+
+int _lisLength(int arr[], int i){
+  int max = 0;
+  if(i > 0){
+    for(int j = 0; j <= i ; ++j){
+      //cout << j << endl;
+      int len = 0;
+      if(arr[j] < arr[i]){
+	len = _lisLength(arr, j);
+      }
+      max = (max < len) ? len : max;
+    }
+  }
+  //cout << "returning element " << arr[n] << " with length " << max+1 << endl;
+  return max+1;
+}

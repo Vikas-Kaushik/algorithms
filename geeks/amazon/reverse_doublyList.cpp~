@@ -1,0 +1,49 @@
+#include <iostream>
+#include "singlylist.h"
+
+using namespace std;
+
+void reverseList(Node** head);
+void reverseListRecursive(Node**, Node* = NULL);
+
+int main(){
+  Node* head = makeList(5,10,45,65,23,9);
+  displayList(head);
+
+  reverseList(&head);
+  displayList(head);
+
+  reverseListRecursive(&head);
+  displayList(head);
+
+  deleteList(&head);
+  displayList(head);
+  return 0;
+}
+
+void reverseList(Node** head){
+  Node* prevNode = NULL;
+  Node* temp = NULL;
+  while(*head != NULL){
+    temp = (*head)->next;
+    (*head)->next = prevNode;
+    prevNode = *head;
+    (*head) = temp;
+  }
+  *head = prevNode;
+}
+
+void reverseListRecursive(Node** head, Node* prevNode){
+
+  if(*head == NULL){
+    *head = prevNode;
+    return;
+  }
+  else {
+    Node* temp = (*head)->next;
+    (*head)->next = prevNode;
+    prevNode = *head;
+    *head = temp;
+    reverseListRecursive(head, prevNode);
+  }
+}

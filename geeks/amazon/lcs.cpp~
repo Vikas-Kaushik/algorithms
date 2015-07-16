@@ -1,0 +1,26 @@
+/*
+ * Longest common subsequence
+ */
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void lcsTable(char *x, char *y, int m, int n);
+
+int main(){
+
+}
+
+void lcsTable(char *x, char *y, int m, int n){
+  if(i == 0 || j == 0){
+    c[i][j] = 0;
+  }
+  else if(x[i] == y[j]) {
+    c[i][j] = 1 + c[i-1][j-1];
+  }
+  else {
+    c[i][j] = (c[i][j-1] > c[i-1][j]) ? c[i][j-1] : c[i-1][j];
+  }
+}
