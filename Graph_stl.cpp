@@ -30,6 +30,7 @@ public:
 
 	void addEdge(char src, char dest, int weight = 0) {
 		int i = key_index[src];
+		// error here - couldn't resolve
 		adList[i].insert(adList[i].begin(), Node(dest, weight));
 	}
 
