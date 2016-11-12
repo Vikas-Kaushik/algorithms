@@ -6,10 +6,11 @@
 
 using namespace std;
 
+// Node ~ vertex
 class Node {
 public:
-	char key;
-	int weight;
+	char key; // Node/Vertex ID
+	int weight; // applicable to only source vertex in an edge
 	Node(char key = '\0', int weight = 0) : key(key), weight(weight) {};
 };
 
@@ -17,9 +18,9 @@ class Graph {
 public:
 	unsigned int size;
 	vector<list<Node>> adList;
-	map<char, int> key_index;
-	
-	Graph(vector<char> &v) {
+	map<char, int> key_index; // for quick char to vector index mapping
+	 
+	Graph(vector<char> &v) { // list of nodes is provided while creating a graph
 		this->size = v.size();
 		for (int i = 0; i < size; ++i) {
 			adList[i].insert(adList[i].begin(), Node(v[i]));
